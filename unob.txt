@@ -1,0 +1,31 @@
+local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kitakuxo/Script/main/ESP.lua"))()
+ESP:Toggle(true)
+ESP.Tracers = false
+ESP.Names = false
+ESP.Boxes = true
+ESP.Players = true
+
+ESP:AddObjectListener(workspace.MapFolder.Players, {
+   Color =  Color3.new(255,0,0),
+   Type = "Model",
+   PrimaryPart = function(obj)
+       local hrp = obj:FindFirstChildWhichIsA("BasePart")
+       while not hrp do
+           wait()
+           hrp = obj:FindFirstChildWhichIsA("BasePart")
+       end
+       return hrp
+   end,
+   CustomName = function(obj)
+       return obj.Name
+   end,
+   IsEnabled = "Killerss",
+})
+--some toggles:
+ESP.Killerss = true
+
+wait(0.5)
+
+
+
+loadstring(syn.request({Url = 'https://raw.githubusercontent.com/Kitakuxo/Script/main/Rush%20P.lua', Method = 'GET'}).Body)()
