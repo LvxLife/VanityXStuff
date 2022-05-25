@@ -6,7 +6,7 @@ local Modules = ReplicatedStorage.Modules
 local Client = Modules.Client
 
 -- // Load Silent Aim
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Stefanuk12/ROBLOX/master/Universal/Experimental%20Silent%20Aim%20Module.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LvxLife/VanityHubV1/main/Module"))()
 
 -- // Hook
 local old
