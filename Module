@@ -1,4 +1,4 @@
--- // New version: See ./Aiming/SilentAim.lua
+
 
 if getgenv().ValiantAimHacks then return getgenv().ValiantAimHacks end
 
